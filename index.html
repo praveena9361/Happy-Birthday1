@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Happy Birthday</title>
+        <link rel="stylesheet" href="mouni.css">
+    </head>
+  
+   
+
+
+<body>
+  <!--   <audio id="bgmusic" loop>
+    <source src="happy birthday.mp3" type="audio/mp3">
+</audio> -->
+    <div class="intro">
+        <div class="balloon" onclick="openPage()">🎈</div>
+        <h2>Touch the Balloon 👈</h2>
+    </div>
+   <!--  <div id="website">Happy Birthday !</div> -->
+
+    <audio id="popSound">
+
+        <source src="https://res.cloudinary.com/dsdpwf7fd/video/upload/v1779073163/professionalsfx-balloon-pop-sound-effect-504628_yoh5tw.mp3" type="audio/mp3">
+    </audio>
+    <header>
+    <nav class="navbar">
+   
+    
+        <img class="logos" src="https://res.cloudinary.com/dsdpwf7fd/image/upload/v1779003330/birthday_female71.jpg_rhz8ee.webp" alt="logo">
+      
+
+     <ul>
+        <a class="home" href="#home">Clips</a>
+         <a class="card" href="#card">One day</a>
+         <a class="video" href="#video">Video</a>
+         <a class="Blow" href="#Blow">Blow</a>
+    </ul>
+</nav>
+</header>
+<style>
+    *{
+
+   
+   scroll-behavior: smooth;
+
+
+}
+
+
+
+body{
+  background:rebeccapurple;
+  overflow-X:hidden;
+ 
+} 
+.intro{
+   position:fixed;
+   width:100%;
+   height:100vh;
+   background:linear-gradient(to right,#5f6bcf,#ae45b8);
+   display:flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   z-index:1000;
+   color:white;
+}
+.balloon{
+   font-size:120px;
+   cursor:pointer;
+   animation:float 2s infinte ease-in-out;
+}
+@keyframes float{
+   0%{
+      transform: translateY(0);
+   }
+   50%{
+      transform:translateY(-20px);
+
+   }
+   100%{
+      transform:translateY(0);
+   }
+}
+#website{
+   display:none;
+   width: 100%;
+   height:100vh;
+   background:rgb(146, 76, 146);
+   color:#fff;
+   justify-content: center;
+   align-items: center;
+   font-size: 40px;
+}
+nav{
+    background-image: radial-gradient(rgb(255, 255, 255),hsla(337, 11%, 63%, 0.856));
+    width:1340px;
+    height:70px;
+    
+}
+
+    .navbar{
+display:flex;
+justify-content: start;
+align-items:start;
+padding:10px;
+box-shadow: 0 0 20px #dba5cb;
+position:sticky;
+    }
+
+ .home{
+    margin-left: 10rem;
+    color:rgb(221, 67, 195);
+    float: left;
+    margin-top:1rem;
+    text-decoration: none;
+    font-size: 2rem;
+ }
+ .home:hover{
+    opacity: 0.5;
+    color:midnightblue;
+ }
+ .home:focus{
+    color:gray;
+ }
+
+ .card{
+    margin-left: 10rem;
+    color:rgb(221, 67, 195);
+    float: left;
+    margin-top:1rem;
+    text-decoration: none;
+    font-size: 2rem;
+ }
+ .card:hover{
+    opacity: 0.5;
+    color:midnightblue;
+ }
+ .card:focus{
+    color:gray;
+ }
+ .video{
+    margin-left: 1rem;
+    color:rgb(221, 67, 195);
+       float: left;
+        margin-left:10rem;
+    margin-top:1rem;
+    text-decoration: none;
+    font-size: 2rem;
+   
+ }
+ .video:hover{
+    opacity: 0.5;
+    color:midnightblue;
+ }
+ .video:focus{
+    color:gray;
+ }
+ .Blow{
+    margin-left: 13rem;
+    color:rgb(221, 67, 195);
+    float: left;
+  margin-top:1rem;
+  margin-left:10rem;
+    text-decoration: none;
+    font-size: 2rem;
+    
+ }
+ .Blow:hover{
+    opacity: 0.5;
+    color:midnightblue;
+ }
+ .Blow:focus{
+    color:gray;
+ }
+ 
+ .logos{
+   width:100px;
+   border-radius: 3px;
+   box-shadow: 2px 5px 20px  whitesmoke;
+ }
+ .div1{
+    display:grid;
+   grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+   margin-left:1rem;
+   margin-top: 1rem;
+   row-gap:10px;
+ }
+ .product-card{
+    background-color:#fff;
+    
+    width:200px;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow:0 4px 8px #fff;
+  transform: rotate(-3deg);
+  justify-content: center;
+
+ }
+ .img1{
+    height:180px;
+    width:170px;
+    display:block;
+    margin:auto;
+    border:5px double #3e3f39;
+    
+ }
+ .product-card1{
+    background-color: #fff;
+    width:200px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow: 0 4px 8px #fff ;
+    transform: rotate(3deg);
+ }
+ .img2{
+    width:180px;
+    height:160px;
+   
+    border:5px double #3e3f39;
+ }
+ .wish{
+color:#fff;
+font-size: 2rem;
+text-align: center;
+
+ }
+
+ .mo{
+    color:white;
+    text-shadow: 0 0 20px #e0d20c;
+    text-align:center;
+ }
+ 
+ .img3{
+    width:180px;
+    height:170px;
+    border:5px double #3e3f39;
+
+ }
+ .product-card2{
+   background-color: #fff;
+   width:200px;
+   padding:20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px #fff;
+   transform:rotate(-2deg);
+ }
+  .product-card3{
+   background-color: #fff;
+   width:200px;
+   padding:20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px #fff;
+   transform: rotate(3deg);
+ }
+ .img4{
+    width:180px;
+    height:170px;
+    border:5px double #3e3f39;
+ }
+  .product-card4{
+   background-color: #fff;
+   width:200px;
+   padding:20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px #ffffff;
+   transform: rotate(-3deg);
+ }
+ .img5{
+    width:170px;
+    height:170px;
+    border:5px double #3e3f39;
+ }
+.product-card5{
+    background-color:#fff;
+    width:200px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 8px;
+    
+}
+.pra{
+    color:rgb(199, 199, 199);
+    font-size: 22px;
+    width: 90%;
+    line-height: 1.8;
+    word-wrap: break-word;
+    text-align: center;
+    margin-left:60px;
+   
+
+ }
+ .happy{
+   color:#e7e7e7;
+  transform: translate(560px);
+  text-shadow:0 0 20px #fa811d ;
+  font-size: 2rem;
+   
+ }
+#video{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.vdo, .vido{
+   width:45%;
+   max-height:500px;
+   height: auto;
+   border-radius: 0px;
+   box-shadow: 0 0 15px rgba(255, 255, 255, 0.767);
+   border: 5px double #faefef;
+   background-color: #000;
+ 
+}
+
+
+.product-cardd{
+   background-color:#ffffff;
+   width:50%;
+   height:90%;
+   padding:20px;
+   border: 3px solid #292828;   
+}
+.cake-container{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 100px;
+
+}
+.countdown{
+    color:white;
+
+    font-size:60px;
+
+    margin-bottom:40px;
+
+    text-shadow:0 0 20px white;
+}
+
+/* Cupcake */
+.cake{
+    position:relative;
+   width:150px;
+   justify-content: center;
+   top:110px;
+    animation: float 2s infinite ease-in-out;
+}
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+
+.candle{
+    position:absolute;
+
+    width:15px;
+    height:60px;
+
+    background:rgb(224, 213, 177);
+
+    top:-50px;
+    left:46%;
+
+    transform:translateX(-50%);
+
+    border-radius:10px;
+}
+
+.flame{
+    position:absolute;
+
+    width:20px;
+    height:30px;
+
+    background:orange;
+
+    border-radius:50%;
+
+    top:-25px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    box-shadow:0 0 20px yellow;
+
+    animation:flicker 0.3s infinite;
+}
+@keyframes flicker{
+
+    0%{
+        transform:translateX(-50%) scale(1);
+    }
+
+    50%{
+        transform:translateX(-50%) scale(1.1);
+    }
+
+    100%{
+        transform:translateX(-50%) scale(1);
+    }
+}
+.layer{
+   width:140px;
+   height:60px ;
+   background: whitesmoke;
+   border-radius: 50% 50% 10px 10px;
+   justify-content: center;
+   box-shadow:0 0 20px #dba5cb;
+}
+.layer::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:18px;
+    background:white;
+    border-radius:20px;
+}
+.cream{
+    width:140px;
+    height:80px;
+
+    background:rgb(248, 175, 199);
+
+    border-radius:50% 50% 10px 10px;
+    box-shadow:0 0 20px #e2b8e6;
+}
+
+.base{
+    width:115px;
+    height:60px;
+
+    background:#f584c2;
+
+    margin:auto;
+
+    clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+}
+
+   
+</style>
+ <section id="home">
+   
+<p class="wish">☀️ To the person who always stands by me, 🌟To the person with the purest heart, <br>
+🌸 To the one who has been protecting me since 8th class,<br>
+    And to the person who deserves every happiness and positive thing in life… 
+</p>
+
+<h2 class="mo"> Happy Birthday, Mouniyaaaa! 🌼</h2> <br>
+<!-- <p class="pra"> May your smile always stay bright and your life be filled with love, joy, and success ! </p> -->
+<main> 
+   
+        <div class="div1">
+        <div class="product-card">
+    <img class="img1" src="https://res.cloudinary.com/dsdpwf7fd/image/upload/v1778217041/mouni_mini2_xhdwdm.jpg" alt="1" title="Wish" >
+    </div>
+
+    <div class="product-card1">
+    <img class="img2" src="https://res.cloudinary.com/dsdpwf7fd/image/upload/v1778215459/ai_mouni_dqqiqx.jpg" alt="2" title="You" >
+    </div>
+    <div class="product-card2">
+        <img class="img3" src="https://res.cloudinary.com/dsdpwf7fd/image/upload/v1778217042/mouni12_sk2sdr.jpg" alt="3" title="Happy">
+    </div>
+      <div class="product-card3">
+        <img class="img4" src="https://res.cloudinary.com/dsdpwf7fd/image/upload/v1778217045/mouni17_czjznr.jpg" alt="4" title="Birthday">
+    </div>
+      <div class="product-card4">
+        <img class="img5" src="https://res.cloudinary.com/dsdpwf7fd/image/upload/v1778215462/mouni4_oefuyn.jpg" alt="5" title="Mouniiii">
+    </div>
+    
+</div>  
+<br>
+</section>
+<section id="card">
+    <br>
+    <br>
+    <br>
+    
+    <h3 class="happy">Chaotic Memory</h3>
+    <p class="pra"> I will never forget the day I joined 8th grade in a new school. I wasn’t able to speak to new people because everyone was new to me, so I stayed quiet. After a week, some people approached me, and I started talking to them. Then I met a person — she approached me and said “Hi.” I never knew that day that she was going to become my best friend.
+
+We started talking and sharing a lot of things, and slowly we became good friends. One day, she introduced me to her gang members, and I became close to them, especially to Mouni.
+
+Then a bad thing happened. On my 13th birthday, I was completely shocked, and I didn’t know how to handle the situation. But suddenly, that incident changed everything. That birthday is something I will never forget. I hope you still remember what happened to us that day.
+
+Then lockdown arrived. We couldn’t talk much in that time, but we stayed connected through mobile phones. Later, we went back to school in 10th standard. We shared even more secrets and became closer. We even fought for marks sometimes, but we never felt jealous of each other. We were understanding and remained good friends during that time.
+
+After completing 10th standard, we moved to 11th standard and chose the same course — Computer Science. At that time, she started ignoring me because she had a new friend. I felt really sad because of that. Later, I became close to someone else too, but I never forgot to talk to her. Every morning, I would say hi or give her a compliment. I kept forcing conversations until one day I realized I was only saying “hi” and “bye.”
+
+After 12th standard began, we joined the same tuition center, and once again we started talking like the old days. Then some conflicts happened in tuition, but after completing 12th standard, we became super close friends again because of the lessons life taught us.
+
+You know everything that happened between us, Mouni. Thank you for always being by my side.
+
+Happy Birthday, my dearrrr Mouniiiii ! 🤍</p>
+<br>
+
+
+</section>
+
+<section id="video">
+ 
+   <!--  <p class="p1"> -->
+        <video id="myvideo" class="vdo" controls>
+        <source src="https://res.cloudinary.com/dsdpwf7fd/video/upload/v1778296667/mouni_vdo_yf8ou7.mp4" type="video/mp4">
+        ">
+       
+        </video>
+         <video id="myvideo" class="vido" controls>
+              <source  src="https://res.cloudinary.com/dsdpwf7fd/video/upload/v1778315231/mouni_vd2_pxuwuk.mp4" type="video/mp4">
+              </video>
+    </p>
+</section>
+<br>
+<hr>
+<section id="Blow">
+<div class="cake-container">
+
+    <div class="countdown" id="countdown">
+        3
+    </div>
+
+    <div class="cake">
+<div class="layer"></div>
+        <div class="candle">
+            <div class="flame" id="flame"></div>
+        </div>
+
+        <div class="cream"></div>
+
+        <div class="base"></div>
+
+    </div>
+
+</div>
+    
+</section>
+<script src="mouni.js">
+     function openPage(){
+
+       document.querySelector(".intro").style.display="none";
+        document.getElementByld("website").style.display="flex"; 
+        document.getElementById("bgmusic").play();
+       
+    }
+    let music=document.getElementById("bgmusic");
+   let video=document.getElementById("myvideo");
+     
+     
+        video.addEventListener("play",function(){
+        Music.pause();
+      });
+
+      video.addEventListener("ended",function(){
+        music.play();
+      });
+      function openPage(){
+        document.getElementById("popSound").play();
+        document.querySelector(".balloon").style.display="none";
+
+        setTimeout(function(){
+          document.querySelector(".intro").style.display="none";
+
+          document.getElementById(".website").style.display="block";
+        },850);
+      }
+      let count = 12;
+
+let text = document.getElementById("countdown");
+
+let timer = setInterval(function(){
+
+    count--;
+
+    if(count > 0){
+
+        text.innerHTML = count;
+
+    }
+
+    else if(count == 0){
+
+        text.innerHTML = 1;
+
+    }
+
+    else{
+
+        clearInterval(timer);
+
+        text.innerHTML = "Blow the candle...";
+
+        setTimeout(function(){
+
+            document.getElementById("flame").style.display = "none";
+
+            text.innerHTML = "Happy Birthday Mouniyaa ! 🤍";
+
+        },2000);
+    }
+
+},1000);
+</script>
+</main>
+</body>
+</html>
